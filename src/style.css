@@ -150,12 +150,10 @@ nav button:hover {
 
 .food-input[contenteditable]:empty:not(:focus)::before {
   content: attr(data-placeholder);
-  color: #aaa;  /* soft placeholder */
+  color: #aaa;
   font-style: italic;
   pointer-events: none;
 }
-
-
 
 /* FOOD LIST */
 .food-list {

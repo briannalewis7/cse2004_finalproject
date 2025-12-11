@@ -5,7 +5,7 @@ import PlannerPage from "./components/WeeklyPlanner"
 import "./style.css"
 
 export default function App() {
-  const [page, setPage] = useState("home") // home | log | planner
+  const [page, setPage] = useState("home") 
   const [currentDay, setCurrentDay] = useState("") // track the day for LogPage
 
   const getTodayDay = () => {
@@ -22,7 +22,7 @@ export default function App() {
   return (
     <div className="App">
       <header>
-        <h1>Food Tracker</h1>
+        <h1>Food Tracker 🍽️</h1>
         <nav>
           <button onClick={() => setPage("home")}>Home</button>
           <button onClick={handleLogToday}>Log Today's Food</button>
