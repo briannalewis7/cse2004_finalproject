@@ -26,7 +26,7 @@ export default function App() {
         <nav>
           <button onClick={() => setPage("home")}>Home</button>
           <button onClick={handleLogToday}>Log Today's Food</button>
-          <button onClick={() => setPage("planner")}>Weekly Planner</button>
+          <button onClick={() => setPage("planner")}>Weekly Log</button>
         </nav>
       </header>
 

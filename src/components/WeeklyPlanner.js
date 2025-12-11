@@ -10,7 +10,8 @@ export default function PlannerPage({ setPage, setCurrentDay }) {
 
   return (
     <div className="page">
-      <h2>Weekly Planner</h2>
+      <h2>Weekly Log </h2>
+      <h3>Click on a day of the week to log food for that day</h3>
       <div className="planner-grid">
         {days.map((day) => (
           <button
