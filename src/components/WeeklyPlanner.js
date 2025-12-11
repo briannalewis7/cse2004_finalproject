@@ -1,12 +1,12 @@
-import React from "react";
+import React from "react"
 
 export default function PlannerPage({ setPage, setCurrentDay }) {
-  const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 
   const handleDayClick = (day) => {
-    setCurrentDay(day); // pass selected day to LogPage
-    setPage("log");      // navigate to LogPage
-  };
+    setCurrentDay(day) // pass selected day to LogPage
+    setPage("log")      // navigate to LogPage
+  }
 
   return (
     <div className="page">
@@ -24,5 +24,5 @@ export default function PlannerPage({ setPage, setCurrentDay }) {
         ))}
       </div>
     </div>
-  );
+  )
 }

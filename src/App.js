@@ -1,23 +1,23 @@
-import React, { useState } from "react";
-import HomePage from "./components/HomePage";
-import LogPage from "./components/LogPage";
-import PlannerPage from "./components/WeeklyPlanner";
-import "./style.css";
+import React, { useState } from "react"
+import HomePage from "./components/HomePage"
+import LogPage from "./components/LogPage"
+import PlannerPage from "./components/WeeklyPlanner"
+import "./style.css"
 
 export default function App() {
-  const [page, setPage] = useState("home"); // home | log | planner
-  const [currentDay, setCurrentDay] = useState(""); // track the day for LogPage
+  const [page, setPage] = useState("home") // home | log | planner
+  const [currentDay, setCurrentDay] = useState("") // track the day for LogPage
 
   const getTodayDay = () => {
-    const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    return days[new Date().getDay()];
-  };
+    const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    return days[new Date().getDay()]
+  }
 
   const handleLogToday = () => {
-    const today = getTodayDay();
-    setCurrentDay(today);
-    setPage("log");
-  };
+    const today = getTodayDay()
+    setCurrentDay(today)
+    setPage("log")
+  }
 
   return (
     <div className="App">
@@ -38,5 +38,5 @@ export default function App() {
         <PlannerPage setPage={setPage} setCurrentDay={setCurrentDay} />
       )}
     </div>
-  );
+  )
 }

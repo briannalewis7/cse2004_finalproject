@@ -179,13 +179,12 @@ nav button:hover {
   display: block;
 }
 
-/* AMOUNT/UPDATE BUTTONS */
 .amount-container {
   display: flex;
   align-items: center;
   gap: 8px;
   margin-top: 10px;
-  flex-wrap: nowrap; /* ensures update button stays inline */
+  flex-wrap: nowrap; 
 }
 
 .amount-input {
@@ -232,12 +231,12 @@ nav button:hover {
   font-weight: 600;
   cursor: pointer;
   transition: 0.25s ease;
-  margin-left: 6px; /* space from inputs */
+  margin-left: 6px; 
   flex-shrink: 0;
 }
 
 .remove-btn {
-  margin-top: 10px; /* stays below macros */
+  margin-top: 10px; 
   padding: 6px 12px;
   border-radius: 10px;
   border: none;
@@ -403,7 +402,7 @@ nav button:hover {
 }
 
 .day-card:hover::after {
-  content: "Click to view/edit meals";
+  content: "Click to view";
   position: absolute;
   bottom: -24px;
   font-size: 0.75rem;
@@ -432,10 +431,9 @@ nav button:hover {
   transform: translateY(-2px);
 }
 
-/* AUTOCOMPLETE - Option A: Soft Pastel Bubble */
 .autocomplete-list {
   position: absolute;
-  bottom: 60px; /* adjust above input */
+  bottom: 60px; 
   left: 16px;
   right: 16px;
   background: rgba(255, 255, 255, 0.95);
